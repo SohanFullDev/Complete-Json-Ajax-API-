@@ -1,34 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>JSON</title>
 </head>
+
 <body>
     <h1>Learn JSON</h1>
     <script type="text/javascript">
-      var person ={
-        "Name": "Joe",
-        "Last Name":"Miller",
-        "Address": {
-            "Street":"Neverland 42",
-            "City": "Toronto"
-          },
-          "Hobbies": [
-            "doing stuff",
-            "dreaming"
+        var myObj = {
+            "friends":[{
+            "firstName": "Mike",
+            "lastName": "Jones"
 
-          ],
-      "Cars":[{"make":"Mustang","year":2023,"color":"red"},
-           {"make":"F150","year":2015,"color":"blue"}]    
+        },
+            {
+                "firstName":"Sohan",
+                "lastName":"Sujan"
+            },
+            {
+                "firstName":"Hadi",
+                "lastName" :"Hasan"
+            }
+        ]
+            
 
-      };
+      }
+     // console.log(myObj);
+     var users = myObj.friends;
+     for(var x in users){
+       // console.log(users[x]);
        
-        console.log(person);
+       console.log(users[x].firstName+' '+users[x].lastName);
 
-
+     }
     </script>
-    
 </body>
+
 </html>
