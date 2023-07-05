@@ -24,6 +24,10 @@
             {
                 "firstName":"Hadi",
                 "lastName" :"Hasan"
+            },
+            {
+                "firstName":"Bishu",
+                "lastName":"Pasha"
             }
         ]
             
@@ -35,7 +39,7 @@
      for(var x in users){
        // console.log(users[x]);
         // console.log(users[x].firstName+' '+users[x].lastName);
-        html +=users[x].firstName+ ' '+
+        html +=(Number(x)+1)+'.'+ users[x].firstName+ ' '+
          users[x].lastName+'<br>'
      }
      document.getElementById('output').innerHTML=html;
