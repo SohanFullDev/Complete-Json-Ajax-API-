@@ -8,24 +8,24 @@
 <body>
     <h1>Learn JSON</h1>
     <script type="text/javascript">
-        var people={
+      var person ={
+        "Name": "Joe",
+        "Last Name":"Miller",
+        "Address": {
+            "Street":"Neverland 42",
+            "City": "Toronto"
+          },
+          "Hobbies": [
+            "doing stuff",
+            "dreaming"
 
-         "person1" :{
-            "firstName":"Sohan",
-            "lastName" :"Shikder",
-              "age" : 28,
-              "Checkedin" : true
-                    },
+          ],
+      "Cars":[{"make":"Mustang","year":2023,"color":"red"},
+           {"make":"F150","year":2015,"color":"blue"}]    
 
-            "person2":{
-                "firstName": "Laurence",
-                "lastName" : "Svekis",
-                "age" : 35,
-                "checkedin": false
-                    }
-                    };
+      };
        
-        console.log(people);
+        console.log(person);
 
 
     </script>
