@@ -34,16 +34,24 @@
 
       }
      // console.log(myObj);
-     var users = myObj.friends;
-     var html = "";
-     for(var x in users){
-       // console.log(users[x]);
-        // console.log(users[x].firstName+' '+users[x].lastName);
-        html +=(Number(x)+1)+'.'+ users[x].firstName+ ' '+
-         users[x].lastName+'<br>'
+    // var users = myObj.friends;
+     var html = '';
+      var output = document.getElementById('output');
+     for(x=0;x<myObj.friends.length;x++){
+        html +=(Number(x)+1)+'.'+ 
+        myObj.friends[x].firstName+ ' '+
+        myObj.friends[x].lastName+'<br>'
      }
-     document.getElementById('output').innerHTML=html;
+     output.innerHTML = html; 
+     myObj.friends.forEach(function(item){
+        output.innerHTML+=item.firstName+''+item.lastName+'<br>'
 
+     });
+
+   //comment kore o chara dekbo
+
+   // output.innerHTML = html; 
+   
     </script>
 </body>
 
