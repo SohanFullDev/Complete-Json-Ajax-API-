@@ -9,6 +9,7 @@
 
 <body>
     <h1>Learn JSON</h1>
+    <div id="output"></div>
     <script type="text/javascript">
         var myObj = {
             "friends":[{
@@ -30,12 +31,15 @@
       }
      // console.log(myObj);
      var users = myObj.friends;
+     var html = "";
      for(var x in users){
        // console.log(users[x]);
-       
-       console.log(users[x].firstName+' '+users[x].lastName);
-
+        // console.log(users[x].firstName+' '+users[x].lastName);
+        html +=users[x].firstName+ ' '+
+         users[x].lastName+'<br>'
      }
+     document.getElementById('output').innerHTML=html;
+
     </script>
 </body>
 
